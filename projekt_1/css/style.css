@@ -144,6 +144,9 @@ p {
 #contact-form .form-group {
     margin-bottom: 20px;
 }
+#contact-form p {
+    color: black;
+}
 
 #contact-form label {
     display: block;
@@ -189,9 +192,33 @@ p {
 /* Fitko */
 #fitko {
     background-color: lightgrey;
-    padding-bottom: 2.9rem;
+    padding-bottom: 3.6rem;
 }
 
 #fitko .fitko-content h1 {
     text-align: center;
+}
+#fitko .fitko-content a {
+    background: black;
+    color: white;
+    padding: 1px 3px;
+}
+#fitko .fitko-content a:hover {
+    background: white;
+    color: black;
+}
+
+/* Section */
+#contact-info .box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+#contact-info .box h3 {
+    font-size: larger;
+}
+#contact-info .bg-dark {
+    background: #333;
+    color: #fff;
 }
