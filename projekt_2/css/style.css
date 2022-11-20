@@ -15,6 +15,15 @@ body{
     background-color: black;
     color: #fff;
 }
+
+.bg-new {
+    background-color: white;
+}
+
+.bg-new2 {
+    background-color: #f4f4f4;
+}
+
 .list{
     margin: 0.5rem 0;
     list-style: none;
@@ -101,6 +110,12 @@ p{
 a{
     text-decoration: none;
 }
+
+.active {
+    background-color: mediumblue;
+    border-radius: 5px;
+}
+
 /*navbar*/
 #navbar{
     background: black;
@@ -167,14 +182,19 @@ a{
     font-size: xxx-large;
     color: black;
 }
+
+#about {
+    color: black;
+}
+
 #project{
     display: flex;
 }
 #project div{
-    flex:1;
+    flex: 1;
 }
 #project .project-img{
-    background: url("../img/fitko1.jpg")no-repeat;
+    background: url("../img/fitko5.jpg")no-repeat;
 }
 #images .items {
     display: flex;
