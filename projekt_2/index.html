@@ -10,6 +10,8 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="keywords" content="Gym, Fitko, Fitness produkty"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width: 1100px">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px">
     <title>Fitness E-shop</title></head>
 <body id="home">
 <nav id="navbar">
@@ -118,7 +120,7 @@
     </div>
 </section>
 
-<footer id="main-footer" class="bg-dark text-center py-1">
+<footer id="main-footer" class="bg-light text-center py-1">
     <div class="container">
         <p>Copyright &copy; 2022 OA a SOŠL, Opava p.o.</p>
     </div>
@@ -128,56 +130,41 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script>
-    // Smooth scrolling
-    $('#navbar a, .btn').on('click', function (event) {
-        if (this.hash !== '') {
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate(
-                {
-                    scrollTop: $(hash).offset().top - 100
-                }, 800
-            )
-        }
-    })
+<script>    // Smooth scrolling
+$('#navbar a, .btn').on('click', function (event) {
+    if (this.hash !== '') {
+        event.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top - 100
+            }, 800
+        )
+    }
+})
 
 
-    var nav_sections = $('section');
-    var main_nav = $('#navbar li, .mobile-nav');
+var nav_sections = $('section');
+var main_nav = $('#navbar li, .mobile-nav');
+$(window).on('scroll', function () {
 
-    $(window).on('scroll', function () {
-
-        var cur_pos = $(this).scrollTop() + 200;
-
-        // Menu Opacity on scrolling and hidding source
-
-        if (cur_pos > 350) {
-            document.querySelector('#navbar').style.opacity = 0.9;
-            document.querySelector('#showcase .source').style.display = "none";
-        } else {
-            document.querySelector('#navbar').style.opacity = 1;
-            document.querySelector('#showcase .source').style.display = "block";
+    var cur_pos = $(this).scrollTop() + 200;
+    // Navigation active state on scroll
+    nav_sections.each(function () {
+        var top = $(this).offset().top,
+            bottom = top + $(this).outerHeight();
+        if (cur_pos >= top && cur_pos <= bottom) {
+            if (cur_pos <= bottom) {
+                main_nav.find('a').removeClass('active');
+            }
+            main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
         }
 
-        // Navigation active state on scroll
-
-        nav_sections.each(function () {
-            var top = $(this).offset().top,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                if (cur_pos <= bottom) {
-                    main_nav.find('a').removeClass('active');
-                }
-                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            }
-
-            if (cur_pos < 300) {
-                $("#navbar ul li a").removeClass('active');
-            }
-        });
+        if (cur_pos < 300) {
+            $("#navbar ul li a").removeClass('active');
+        }
     });
+});
 </script>
 
 </body>
