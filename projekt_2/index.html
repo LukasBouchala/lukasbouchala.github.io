@@ -18,6 +18,7 @@
     <div id="logo"><span class="text-primary"><i class="fa-solid fa-dumbbell"></i></span><a href="index.html"> Fitness
         <span
                 class="text-primary">E-shop </span></a></div>
+    <a href="#" id="hambac"><i class="fa fa-bars fa-2x"></i></a>
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">Fitness produkty</a></li>
@@ -131,6 +132,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>    // Smooth scrolling
+$("#navbar #hambac").click(function (){
+    $("#navbar ul").slideToggle("slow")
+});
+
+$("navbar ul").click(function (){
+    $("#navbar ul").hide();
+});
+
 $('#navbar a, .btn').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
