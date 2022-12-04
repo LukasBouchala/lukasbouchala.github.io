@@ -13,7 +13,6 @@ a {
 
 header {
     width: 100%;
-    background-color: none;
     z-index: 100;
 }
 .header-items {
@@ -96,7 +95,7 @@ main .wrapper form .row {
 }
 main .wrapper form .row input {
     width: 90%;
-    background-color: grey;
+    background-color: #5f6368;
     border: 1px solid #5f6368;
     height: 44px;
     border-radius: 24px;
@@ -109,7 +108,7 @@ main .wrapper form .row input:hover {
     border: 1px solid white;
 }
 main .wrapper form .row input:focus::placeholder {
-    color: transparent;
+    color: white;
 }
 main .wrapper form .row button {
     width: 8%;
@@ -125,7 +124,7 @@ main .wrapper form .row button {
     border-radius: 40px;
 }
 main .wrapper form .row button:hover {
-    background-color: var(--lighter-gray);
+    background-color: #5f6368;
 }
 main .wrapper form .row i {
     font-size: 1.5em;
@@ -137,8 +136,8 @@ main .wrapper form .buttons {
     flex: 2;
 }
 main .wrapper form .buttons input {
-    background-color: var(--lighter-gray);
-    border: 1px solid var(--lighter-gray);
+    background-color: #5f6368;
+    border: 1px solid #5f6368;
     border-radius: 24px;
     padding: 0 2em;
     height: 44px;
