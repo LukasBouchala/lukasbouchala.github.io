@@ -23,7 +23,7 @@ header {
     padding: 1vh 2vh;
 }
 .header-items .logo img {
-    width: 3em;
+    width: 3rem;
 }
 .header-items .links {
     display: flex;
@@ -38,18 +38,18 @@ header {
 }
 .header-items .links li a {
     color: lightgrey;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     transition: color 0.5s;
     text-transform: capitalize;
     text-align: center;
     display: flex;
 }
 .header-items .links li a:hover:not(a.active) {
-    color: white
+    color: white;
 }
 header .active {
     font-weight: 700;
-    color: white !important;
+    color: white;
 }
 
 /* Main */
@@ -75,10 +75,10 @@ main .wrapper .title h1, p, h2 {
     color: white
 }
 main .wrapper .title h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 main .wrapper .title p {
-    font-size: 2em;
+    font-size: 2rem;
 }
 main .wrapper form {
     width: 100%;
@@ -127,7 +127,7 @@ main .wrapper form .row button:hover {
     background-color: #5f6368;
 }
 main .wrapper form .row i {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
 }
 main .wrapper form .buttons {
@@ -144,7 +144,7 @@ main .wrapper form .buttons input {
     cursor: pointer;
     color: white;
     margin: 0 5% 5% 5%;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     transition: all 0.3s;
 }
 main .wrapper form .buttons input:hover {
@@ -166,7 +166,7 @@ main .wrapper .subtitle {
     align-items: center;
     justify-content: flex-start;
     margin-top: 5%;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 /* Media */
@@ -180,16 +180,16 @@ main .wrapper .subtitle {
         padding: 3vh 2vh;
     }
     main .wrapper .title h1 {
-        font-size: 3.5em;
+        font-size: 3.5rem;
     }
     main .wrapper .title p {
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
     main .wrapper .subtitle {
         justify-content: center;
     }
     main .wrapper form .row input, main .wrapper form .row p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     main .wrapper form .row {
         flex-direction: column;
@@ -214,12 +214,12 @@ main .wrapper .subtitle {
         align-items: center;
     }
     main .wrapper .title h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
     main .wrapper .title p {
-        font-size: 1em;
+        font-size: 1rem;
     }
     main .wrapper form .buttons input, main .wrapper form .row p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 }
