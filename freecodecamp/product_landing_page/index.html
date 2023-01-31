@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fitness Product Landing Page</title>
-    <link rel="stylesheet" type="text/css" href="ccs/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitness Tracker</title>
 </head>
 <body>
 <header id="header">
-    <img id="header-img" src="fitness-logo.png" alt="Fitness Logo">
+    <img id="header-img"
+         src="https://media.istockphoto.com/id/1035561592/vector/vector-design-element-for-the-fitness-center.jpg?s=612x612&w=0&k=20&c=k3yyyEcqeivby9iE7gZIk33PAjtDqNsdEdYiMjw7qsM="
+         alt="Fitness Tracker logo">
     <nav id="nav-bar">
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#testimonials">Testimonials</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
     </nav>
 </header>
-<main>
-    <section id="features">
-        <h1>Features</h1>
-        <ul>
-            <li>Custom workout plans</li>
-            <li>Fitness tracking and progress monitoring</li>
-            <li>Virtual personal training</li>
-        </ul>
-    </section>
-    <section id="testimonials">
-        <h1>Testimonials</h1>
-        <blockquote>
-            "This fitness app has completely changed my workout routine for the better. The custom workout plans and
-            progress tracking have helped me reach my fitness goals faster than I ever thought possible."
-        </blockquote>
-        <blockquote>
-            "The virtual personal training feature on this app is amazing. I feel like I have a personal trainer right
-            in my pocket."
-        </blockquote>
-    </section>
-    <section id="pricing">
-        <h1>Pricing</h1>
-        <ul>
-            <li>Monthly subscription: $9.99</li>
-            <li>Yearly subscription: $99.99</li>
-        </ul>
-    </section>
-    <video id="video" src="product-video.mp4"></video>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+<section id="hero">
+    <div id="hero-content">
+        <h1>Track Your Fitness Progress</h1>
+        <p>
+            Achieve your fitness goals with our easy-to-use app.
+        </p>
+        <a href="#form" class="cta">Sign up now</a>
+    </div>
+</section>
+<section id="features">
+    <div class="feature">
+        <h2>Track your workouts</h2>
+        <p>
+            Keep track of your exercises, sets, reps, and weight.
+        </p>
+    </div>
+    <div class="feature">
+        <h2>Set goals</h2>
+        <p>
+            Set personalized goals for yourself and track your progress.
+        </p>
+    </div>
+    <div class="feature">
+        <h2>Watch video tutorials</h2>
+        <p>
+            Learn proper form and technique with our embedded video tutorials.
+        </p>
+    </div>
+</section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HnoPHqrdXQ8" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+<section id="testimonials">
+    <div class="testimonial">
+        <p>
+            "I've been using Fitness Tracker for a few months now and I've seen amazing results. It's helped me stay on
+            track and reach my fitness goals."
+        </p>
+        <p>-John Doe</p>
+    </div>
+    <div class="testimonial">
+        <p>
+            "Fitness Tracker is the perfect tool for anyone looking to take control of their fitness journey. I highly
+            recommend it!"
+        </p>
+        <p>-Jane Smith</p>
+    </div>
+</section>
+<section id="form">
+    <form action="https://www.freecodecamp.com/email-submit" method="POST">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
         <input type="submit" id="submit" value="Submit">
     </form>
-</main>
+</section>
 </body>
-</html>
