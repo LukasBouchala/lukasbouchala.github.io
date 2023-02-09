@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+
+#welcome-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#welcome-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: 20px;
+}
+
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-section-header {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-tile {
+    background-color: #eee;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 30%;
+}
+
+.project-tile:hover {
+    background-color: #ddd;
+}
+
+#profile-link {
+    background-color: #333;
+    border: 1px solid #333;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    background-color: #111;
+}
+
+#contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.icons a {
+    color: white;
+    margin: 0 20px;
+}
+
+.fa-brands {
+    font-size: 40px;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+/* Default styles */
+body {
+    font-size: 16px;
+}
+
+/* Media query */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
